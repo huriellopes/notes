@@ -15,9 +15,23 @@
 	<meta name="theme-color" content="#607d8b" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="manifest" href="manifest.json" />
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCXoV7xqRFjvbVwMSJ9skv3p26I3-ffhvU",
+	    authDomain: "notes-pwa-f513d.firebaseapp.com",
+	    databaseURL: "https://notes-pwa-f513d.firebaseio.com",
+	    projectId: "notes-pwa-f513d",
+	    storageBucket: "",
+	    messagingSenderId: "350271608143"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 	<script src="js/object.observe.polyfill.js"></script>
 	<script src="js/array.observe.polyfill.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/push.js"></script>
 </head>
 <body class="grey lighten-5 blue-grey-text">
 	<header id="header" class="container grey lighten-4">
