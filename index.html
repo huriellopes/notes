@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pwa</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="manifest" href="manifest.json" />
+	<script src="js/object.observe.polyfill.js"></script>
+	<script src="js/array.observe.polyfill.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body class="grey lighten-5 blue-grey-text">
+	<header id="header" class="container grey lighten-4">
+		<h1>Notas</h1>
+	</header>
+	<div id="content" class="container grey lighten-4">
+		<p>Adicione as suas anotações a seguir!</p>
+
+		<form id="form-add-note" class="row" autocomplete="off">
+			<input type="text" placeholder="Anotações..." class="col-2 white" required autofocus autocomplete="off" />
+			<input type="submit" value="+" class="blue-grey white-text col-1" />
+		</form>
+
+		<ul id="notes">
+			<li>Notas</li>
+		</ul>
+	</div>
+</body>
+</html>
