@@ -15,15 +15,13 @@ messaging.requestPermission().then(function() {
 	});
 });
 
-messaging.getToken()
-	.then(function(currentToken) {
+messaging.getToken().then(function(currentToken) {
 		if (currentToken) {
 			console.log(currentToken);
 			return currentToken;
 		}else{
 			console.warn('Nenhum id disponínel, Solicite permissão para gerar um!');
 		}
-	})
-	.catch(function(err) {
+	}).catch(function(err) {
 		console.warn('get Token err', err);
 	});
