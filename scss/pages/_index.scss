@@ -21,9 +21,30 @@
 	}
 }
 
-input {
+input[type="text"] {
 	font: inherit;
 	padding: 10px 20px;
+	border: 2px solid #607d8b;
+	box-sizing: border-box;
+	&:focus {
+		border: 2px solid #607d8b;
+	}
+}
+
+input[type="submit"] {
+	font: inherit;
+	padding: 15px 10px;
+	background: #607d8b;
+	color: #FFFFFF;
+	border: 2px solid #607d8b;
+
+	&:hover, &:focus, &:active {
+		border: 2px solid #607d8b;
+		color: #000000;
+		background: transparent;
+		opacity: 2;
+	}
+
 }
 
 /** Muito Pequeno **/

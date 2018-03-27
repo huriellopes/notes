@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 * {
   box-sizing: border-box;
   border: none;
@@ -16,9 +16,11 @@ h1, p {
   padding: 20px 0;
   text-align: center; }
   h1 h1, p h1 {
-    font-size: 2.8em; }
+    font-size: 2.8em;
+    font-weight: 800; }
   h1 p, p p {
-    font-size: 1em; }
+    font-size: 1em;
+    font-weight: 400; }
 
 #header, #form-add-note {
   margin-bottom: 20px; }
@@ -35,9 +37,25 @@ h1, p {
       background-color: #607d8b;
       color: #FFFFFF !important; }
 
-input {
+input[type="text"] {
   font: inherit;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  border: 2px solid #607d8b;
+  box-sizing: border-box; }
+  input[type="text"]:focus {
+    border: 2px solid #607d8b; }
+
+input[type="submit"] {
+  font: inherit;
+  padding: 15px 10px;
+  background: #607d8b;
+  color: #FFFFFF;
+  border: 2px solid #607d8b; }
+  input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    border: 2px solid #607d8b;
+    color: #000000;
+    background: transparent;
+    opacity: 2; }
 
 /** Muito Pequeno **/
 .container {
